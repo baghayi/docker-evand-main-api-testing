@@ -9,4 +9,5 @@ RUN apt-get update -y \
     && docker-php-ext-install intl \
     && docker-php-ext-install soap \
     && docker-php-ext-install pdo_mysql \
-    && curl -sS https://getcomposer.org/installer | php
+    && curl -sS https://getcomposer.org/installer | php \
+    && mv composer.phar /usr/bin/composer
